@@ -8,5 +8,6 @@ public class FactoryStarter {
         notificationFactory.createNotification("SMS").notifyUser();
         notificationFactory.createNotification("EMAIL").notifyUser();
         notificationFactory.createNotification("PUSH").notifyUser();
+        notificationFactory.createNotification("TEST").notifyUser();
     }
 }

@@ -9,7 +9,7 @@ public class NotificationFactory {
             case "SMS" -> new Sms();
             case "EMAIL" -> new Email();
             case "PUSH" -> new Push();
-            default -> null;
+            default -> throw new IllegalArgumentException("Unsupported channel " + channel);
         };
     }
 }
