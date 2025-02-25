@@ -2,8 +2,10 @@ package com.yunusbagriyanik.designpatterns.cretional.factory.main;
 
 import com.yunusbagriyanik.designpatterns.cretional.factory.example1.Notification;
 import com.yunusbagriyanik.designpatterns.cretional.factory.example1.NotificationFactory;
+import com.yunusbagriyanik.designpatterns.cretional.factory.example2.EthereumTransactionProcessor;
 import com.yunusbagriyanik.designpatterns.cretional.factory.example2.TransactionProcessor;
 import com.yunusbagriyanik.designpatterns.cretional.factory.example2.TransactionProcessorFactory;
+import com.yunusbagriyanik.designpatterns.cretional.factory.example2.v2.TransactionProcessorFactoryV2;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
@@ -25,5 +27,10 @@ public class FactoryStarter {
 
         TransactionProcessor ethereumProcessor = TransactionProcessorFactory.getProcessor("Ethereum");
         ethereumProcessor.process("0x1234", "0x5678", 1.25);
+
+        log.info("Transaction Processor V2");
+        TransactionProcessorFactoryV2.registerProcessor("ethereum", new EthereumTransactionProcessor());
+        TransactionProcessor processor = TransactionProcessorFactoryV2.getProcessor("ethereum");
+        processor.process("0xFromAddress", "0xToAddress", 10.5);
     }
 }
