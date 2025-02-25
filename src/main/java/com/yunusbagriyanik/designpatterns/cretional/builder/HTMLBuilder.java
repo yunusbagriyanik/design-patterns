@@ -20,4 +20,9 @@ public class HTMLBuilder {
     public String build() {
         return html.toString();
     }
+
+    public HTMLBuilder addSourceLink(String url) {
+        html.append("<p>Source: <a href=\"").append(url).append("\">").append(url).append("</a></p>");
+        return this;
+    }
 }
