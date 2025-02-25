@@ -4,7 +4,7 @@ import com.yunusbagriyanik.designpatterns.structural.decorator.example1.design.B
 
 public class DarkRoast extends Beverage {
     public DarkRoast() {
-        this.description = "Dark Roast";
+        super("Dark Roast");
     }
 
     @Override

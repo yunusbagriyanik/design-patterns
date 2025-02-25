@@ -10,15 +10,16 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class BeverageDecoratorStarter {
     public static void main(String[] args) {
-        Beverage beverage = new Espresso();
-        log.info(beverage.getDescription() + " " + beverage.cost());
+        Beverage beverage1 = new Espresso();
+        log.info("{}: ${}", beverage1.getDescription(), beverage1.cost());
 
         Beverage beverage2 = new HouseBlend();
         beverage2 = new Mocha(beverage2);
-        log.info(beverage2.getDescription() + " " + beverage2.cost());
+        log.info("{}: ${}", beverage2.getDescription(), beverage2.cost());
 
         Beverage beverage3 = new DarkRoast();
         beverage3 = new Mocha(beverage3);
-        log.info(beverage3.getDescription() + " " + beverage3.cost());
+        beverage3 = new Mocha(beverage3);
+        log.info("{}: ${}", beverage3.getDescription(), beverage3.cost());
     }
 }

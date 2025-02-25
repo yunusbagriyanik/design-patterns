@@ -1,11 +1,19 @@
 package com.yunusbagriyanik.designpatterns.structural.decorator.example1.design;
 
-public abstract class Beverage {
-    public String description;
+import lombok.Getter;
 
-    public String getDescription() {
-        return description;
-    }
+@Getter
+public abstract class Beverage {
+    protected final String description;
 
     public abstract double cost();
+
+    protected Beverage(String description) {
+        this.description = description;
+    }
+
+    @Override
+    public String toString() {
+        return getDescription() + ": $" + cost();
+    }
 }

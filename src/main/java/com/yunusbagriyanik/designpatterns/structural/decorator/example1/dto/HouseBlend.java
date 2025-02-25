@@ -4,7 +4,7 @@ import com.yunusbagriyanik.designpatterns.structural.decorator.example1.design.B
 
 public class HouseBlend extends Beverage {
     public HouseBlend() {
-        this.description = "House Blend";
+        super("House Blend");
     }
 
     @Override

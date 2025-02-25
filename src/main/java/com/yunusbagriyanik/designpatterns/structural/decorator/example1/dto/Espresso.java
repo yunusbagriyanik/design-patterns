@@ -4,7 +4,7 @@ import com.yunusbagriyanik.designpatterns.structural.decorator.example1.design.B
 
 public class Espresso extends Beverage {
     public Espresso() {
-        this.description = "Espresso";
+        super("Espresso");
     }
 
     @Override

@@ -4,19 +4,12 @@ import com.yunusbagriyanik.designpatterns.structural.decorator.example1.design.B
 import com.yunusbagriyanik.designpatterns.structural.decorator.example1.design.BeverageDecorator;
 
 public class Mocha extends BeverageDecorator {
-    private final Beverage beverage;
-
     public Mocha(Beverage beverage) {
-        this.beverage = beverage;
+        super(beverage, "Mocha");
     }
 
     @Override
     public double cost() {
-        return beverage.cost() + .20;
-    }
-
-    @Override
-    public String getDescription() {
-        return beverage.getDescription() + " Mocha";
+        return beverage.cost() + 0.20;
     }
 }
