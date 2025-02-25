@@ -1,7 +1,7 @@
-package com.yunusbagriyanik.designpatterns.cretional.decorator.example1.dto;
+package com.yunusbagriyanik.designpatterns.structural.decorator.example1.dto;
 
-import com.yunusbagriyanik.designpatterns.cretional.decorator.example1.design.Beverage;
-import com.yunusbagriyanik.designpatterns.cretional.decorator.example1.design.BeverageDecorator;
+import com.yunusbagriyanik.designpatterns.structural.decorator.example1.design.Beverage;
+import com.yunusbagriyanik.designpatterns.structural.decorator.example1.design.BeverageDecorator;
 
 public class Mocha extends BeverageDecorator {
     private final Beverage beverage;

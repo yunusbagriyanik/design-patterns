@@ -1,4 +1,4 @@
-package com.yunusbagriyanik.designpatterns.cretional.decorator.example2.design.datasource;
+package com.yunusbagriyanik.designpatterns.structural.decorator.example2.design.datasource;
 
 public class DataSourceDecorator implements DataSource {
     private final DataSource dataSource;

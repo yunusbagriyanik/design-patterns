@@ -1,4 +1,4 @@
-package com.yunusbagriyanik.designpatterns.cretional.decorator.example2.design.datasource;
+package com.yunusbagriyanik.designpatterns.structural.decorator.example2.design.datasource;
 
 import lombok.extern.slf4j.Slf4j;
 

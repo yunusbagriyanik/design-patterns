@@ -1,7 +1,7 @@
-package com.yunusbagriyanik.designpatterns.cretional.decorator.example2.design.compression;
+package com.yunusbagriyanik.designpatterns.structural.decorator.example2.design.compression;
 
-import com.yunusbagriyanik.designpatterns.cretional.decorator.example2.design.datasource.DataSource;
-import com.yunusbagriyanik.designpatterns.cretional.decorator.example2.design.datasource.DataSourceDecorator;
+import com.yunusbagriyanik.designpatterns.structural.decorator.example2.design.datasource.DataSource;
+import com.yunusbagriyanik.designpatterns.structural.decorator.example2.design.datasource.DataSourceDecorator;
 import lombok.extern.slf4j.Slf4j;
 
 import java.io.ByteArrayInputStream;

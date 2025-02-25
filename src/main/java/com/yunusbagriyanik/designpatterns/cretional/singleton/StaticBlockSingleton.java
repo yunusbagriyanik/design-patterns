@@ -1,9 +1,11 @@
 package com.yunusbagriyanik.designpatterns.cretional.singleton;
 
+import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 public class StaticBlockSingleton {
+    @Getter
     private static final StaticBlockSingleton instance;
 
     private StaticBlockSingleton() {
@@ -15,10 +17,6 @@ public class StaticBlockSingleton {
         } catch (Exception e) {
             throw new RuntimeException("An error occurred while creating a singleton instance ", e);
         }
-    }
-
-    public static StaticBlockSingleton getInstance() {
-        return instance;
     }
 
     public void runner() {

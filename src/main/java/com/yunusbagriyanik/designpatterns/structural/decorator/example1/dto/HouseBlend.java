@@ -1,6 +1,6 @@
-package com.yunusbagriyanik.designpatterns.cretional.decorator.example1.dto;
+package com.yunusbagriyanik.designpatterns.structural.decorator.example1.dto;
 
-import com.yunusbagriyanik.designpatterns.cretional.decorator.example1.design.Beverage;
+import com.yunusbagriyanik.designpatterns.structural.decorator.example1.design.Beverage;
 
 public class HouseBlend extends Beverage {
     public HouseBlend() {
