@@ -1,9 +1,9 @@
 package com.yunusbagriyanik.designpatterns.structural.decorator.example2.main;
 
-import com.yunusbagriyanik.designpatterns.structural.decorator.example2.design.datasource.DataSourceDecorator;
-import com.yunusbagriyanik.designpatterns.structural.decorator.example2.design.compression.CompressedDataSourceDecorator;
 import com.yunusbagriyanik.designpatterns.structural.decorator.example2.design.datasource.DataSource;
 import com.yunusbagriyanik.designpatterns.structural.decorator.example2.design.datasource.FileDataSource;
+import com.yunusbagriyanik.designpatterns.structural.decorator.example2.design.datasource.DataSourceDecorator;
+import com.yunusbagriyanik.designpatterns.structural.decorator.example2.design.compression.CompressedDataSourceDecorator;
 import com.yunusbagriyanik.designpatterns.structural.decorator.example2.design.encryption.EncryptionDecorator;
 import lombok.extern.slf4j.Slf4j;
 
