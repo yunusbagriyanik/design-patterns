@@ -1,4 +1,4 @@
-package com.yunusbagriyanik.designpatterns.behavioral;
+package com.yunusbagriyanik.designpatterns.behavioral.strategy;
 
 public class PayPalPayment implements PaymentService {
     private final String email;

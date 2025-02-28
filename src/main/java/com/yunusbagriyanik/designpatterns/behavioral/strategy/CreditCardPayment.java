@@ -1,4 +1,4 @@
-package com.yunusbagriyanik.designpatterns.behavioral;
+package com.yunusbagriyanik.designpatterns.behavioral.strategy;
 
 public class CreditCardPayment implements PaymentService {
     private final String cardNumber;
